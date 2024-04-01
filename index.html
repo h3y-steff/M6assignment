@@ -1,0 +1,177 @@
+<html lang="en">
+    <head>
+        <style>
+            *
+{
+    background-color: #fffaf1;
+}
+#navbar {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+li {
+    display: inline-flex;
+    border: solid 10px #fc6c85;
+    list-style: none;
+    background-color: #fc6c85
+}
+#seasons {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#topics {
+    border: 1px blue solid;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#draggable { width: 150px; height: 150px; padding: 0.5em; }
+.column1 {
+    flex:1;
+    order:1;
+}
+.column2 {
+    flex:2;
+    order:2;
+}
+.column3 {
+    flex:3;
+    order:3;
+}
+.column4 {
+    flex:1;
+    order:1;
+}
+.column5 {
+    flex:2;
+    order:2;
+}
+.column6 {
+    flex:3;
+    order:3;
+}
+
+.blog {
+    text-align: right;
+}
+a {
+    text-decoration: none;
+}
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.js">
+        </script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js">
+        </script>
+        <script>
+            $( function() {
+    $( "#draggable" ).draggable();
+  } );
+        </script>
+        <link href="style.css" rel="stylesheet">
+            <meta charset="utf-8">
+                <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                    <title>
+                        m6project
+                    </title>
+                </meta>
+            </meta>
+        </link>
+    </head>
+    <body>
+        <nav id="navbar">
+            <ul>
+                <li>
+                    Home
+                </li>
+                <li>
+                    Content
+                </li>
+                <li>
+                    About
+                </li>
+                <li>
+                    Contact
+                </li>
+            </ul>
+        </nav>
+        <h1 class="podcast">
+            Podcast
+        </h1>
+        <container id="seasons">
+            <div>
+                Season 1
+                <img class="images" src="images/Spring.jpeg">
+                </img>
+            </div>
+            <div>
+                Season 2
+                <img class="images" src="images/Summer.jpeg">
+                </img>
+            </div>
+            <div>
+                Season 3
+                <img class="images" src="images/Fall.jpeg">
+                </img>
+            </div>
+            <div>
+                Season 4
+                <img class="images" src="images/Winter.jpg">
+                </img>
+            </div>
+        </container>
+        <h1 class="blog">
+            Blog
+        </h1>
+        <h3>
+            Topics
+        </h3>
+        <container id="topics">
+            <div class="column 1">
+                <a href="">
+                    Nutrition
+                </a>
+            </div>
+            <div class="column 2">
+                <a href="">
+                    Fitness
+                </a>
+            </div>
+            <div class="column 3">
+                <a href="">
+                    Mental Health
+                </a>
+            </div>
+            <div class="column 4">
+                <a href="">
+                    Health Tips
+                </a>
+            </div>
+            <div class="column 5">
+                <a href="">
+                    Beauty
+                </a>
+            </div>
+            <div class="column 6">
+                <a href="">
+                    Lifestyle
+                </a>
+            </div>
+        </container>
+        <div class="ui-widget-content" id="draggable">
+            <p>
+                Drag me around
+            </p>
+        </div>
+    </body>
+</html>
